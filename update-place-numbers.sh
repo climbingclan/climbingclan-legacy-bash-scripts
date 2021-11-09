@@ -12,3 +12,4 @@ quantityofplaces=$3
 
 sudo wp wc product_variation update $1 $2 --stock_quantity=$3 --user=1
 
+

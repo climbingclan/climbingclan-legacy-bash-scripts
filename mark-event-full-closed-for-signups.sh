@@ -1,6 +1,8 @@
-#!/bin/bash
+q#!/bin/bash
 product_id=$1
 sudo wp wc product list --status=publish --user=1 --fields=name,id
+
+sudo wp wc product update $product_id --stock_quantity=0 --user=1;
 
 sudo wp wc product_variation list $product_id --user=1 --field=id > /tmp/.tmpfile
 #2466
