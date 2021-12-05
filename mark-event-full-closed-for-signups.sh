@@ -1,4 +1,4 @@
-q#!/bin/bash
+#!/bin/bash
 product_id=$1
 sudo wp wc product list --status=publish --user=1 --fields=name,id
 
