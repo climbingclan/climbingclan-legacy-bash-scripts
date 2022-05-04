@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#ticket ID of bailing person
+
+# for i in `cat /tmp/list2`; do bash mark-outdoors-crag-froggatt.sh $i; done
 
 id=$1
 
