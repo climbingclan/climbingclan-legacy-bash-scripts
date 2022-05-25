@@ -12,4 +12,6 @@ for i in `cat /tmp/.tmpfile`; do
 sudo wp wc product_variation update $product_id $i --stock_quantity=0 --user=1;
 done;
 
+sudo wp wc product update $product_id --in_stock=0 --user=1
+
 rm /tmp/.tmpfile
